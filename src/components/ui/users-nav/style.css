@@ -1,0 +1,28 @@
+.user-nav {
+  display: flex;
+}
+
+.user-nav__item {
+  color: rgb(51, 51, 51);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 20px 32px;
+}
+
+.user-nav__item svg {
+  margin-right: 10px;
+}
+.user-nav__item a {
+  display: block;
+}
+.user-nav__item:hover span {
+  color: rgb(120, 89, 207);
+}
+.user-nav__item:hover svg {
+  fill: rgb(120, 89, 207);
+}
+.user-nav__item:active {
+  background: rgb(240, 235, 255);
+}

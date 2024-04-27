@@ -1,0 +1,39 @@
+.main-nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.main-nav__item {
+  color: rgb(51, 51, 51);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 20px 32px;
+}
+
+.main-nav__item:hover a {
+  color: rgb(120, 89, 207);
+}
+
+.main-nav__item:active {
+  background-color: rgb(240, 235, 255);
+}
+
+.main-nav__item--active {
+  position: relative;
+  a {
+    color: rgb(120, 89, 207);
+  }
+}
+
+.main-nav__item--active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgb(120, 89, 207);
+}

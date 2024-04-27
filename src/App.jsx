@@ -1,11 +1,13 @@
-import './App.css'
+import Header from "./components/blocks/header/Header";
+import Footer from "./components/blocks/footer/Footer";
 
 function App() {
   return (
-    <>
-    Drink2go
-    </>
-  )
+    <div className="wrapper">
+      <Header />
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

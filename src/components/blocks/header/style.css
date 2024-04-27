@@ -1,0 +1,14 @@
+.header {
+  padding: 24px 0;
+  display: flex;
+  gap: 0 20px;
+  align-items: center;
+  height: 80px;
+}
+
+.header nav:first-of-type {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
