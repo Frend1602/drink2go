@@ -63,19 +63,29 @@ class App extends React.Component {
           img: "coffee-can-6.png",
         },
       ],
+      orders: [],
     };
+    this.addTooOrder = this.addTooOrder.bind(this);
   }
 
   render() {
     return (
       <div className="wrapper">
-        <Header />
+        <Header orders={this.state.orders} />
         <main>
-          <Catalog items={this.state.items} />
+          <Catalog onAdd={this.addTooOrder} items={this.state.items} />
         </main>
         <Footer />
       </div>
     );
+  }
+
+  addTooOrder(item) {
+    let chek = false;
+    this.state.orders.forEach((el) => {
+      if (el.id === item.id) chek = true;
+    });
+    if (!chek) this.setState({ orders: [...this.state.orders, item] });
   }
 }
 

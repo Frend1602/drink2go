@@ -7,7 +7,7 @@ export class Catalog extends Component {
     return (
       <section className="catalog">
         {this.props.items.map((element) => (
-          <Card key={element.id} item={element} />
+          <Card key={element.id} item={element} onAdd={this.props.onAdd} />
         ))}
       </section>
     );

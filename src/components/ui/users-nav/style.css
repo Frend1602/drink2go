@@ -9,20 +9,38 @@
   line-height: 16px;
   text-transform: uppercase;
   padding: 20px 32px;
+  transition: 300ms ease;
 }
 
 .user-nav__item svg {
   margin-right: 10px;
+  transition: 300ms ease;
 }
+
+.user-nav__item span {
+  transition: 300ms ease;
+}
+
 .user-nav__item a {
   display: block;
 }
+
 .user-nav__item:hover span {
   color: rgb(120, 89, 207);
 }
+
 .user-nav__item:hover svg {
   fill: rgb(120, 89, 207);
 }
-.user-nav__item:active {
+
+.active {
   background: rgb(240, 235, 255);
+  color: white;
+}
+
+.active a {
+  color: rgb(139, 111, 190);
+}
+.active svg {
+  fill: rgb(139, 111, 190);
 }

@@ -1,0 +1,19 @@
+.basket-card {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+  img {
+    width: 50px;
+  }
+
+  h3,
+  b {
+    font-size: 16px;
+    font-weight: 400;
+    align-self: center;
+  }
+
+  b {
+    color: #767676;
+  }
+}
